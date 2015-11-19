@@ -95,6 +95,6 @@ ad_form -name org -form {
     }
 
 } -after_submit {
-    ad_returnredirect "one?[export_url_vars organization_id]"
+    ad_returnredirect "one?[export_vars -url {organization_id}]"
 }
 
